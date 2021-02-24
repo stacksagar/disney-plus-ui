@@ -51,8 +51,7 @@ function App() {
 
   return (
     <>
-      <button
-        style={{ background: '#00000099' }}
+      <button 
         onClick={() => setNavOpen((is) => !is)}
         className="focus:outline-none z-40 transition-none text-white font-xl rounded fixed top-3 left-3"
       >
