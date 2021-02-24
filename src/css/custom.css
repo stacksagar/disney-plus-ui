@@ -1,0 +1,109 @@
+* {
+  transition: all 0.3s;
+  font-family: Comic sans ms, arial;
+}
+
+/* Default Scroll Hide  */
+html {
+  scrollbar-color: #666 #1a202c !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a202c !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666 !important;
+  border-radius: 10px;
+}
+/* Default Scroll Hide  */
+
+body {
+  background: #1a202c;
+  color: #ddd;
+}
+
+.navOpen {
+  transform: translateX(-0%);
+  transition: all 0.5s;
+}
+
+.navHide {
+  transform: translateX(-105%);
+  transition: all 2s;
+}
+
+.slide_hide {
+  opacity: 0;
+  transition: all 1s;
+}
+.slide_show {
+  opacity: 1;
+  transition: all 1s;
+}
+
+#smallSlide {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap:8px;
+}
+
+#smallSlide > div { 
+  z-index: 9;
+  height:150px;
+  padding:5px;
+  background:#444;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:3px;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+#smallSlide > div > img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: top left;
+  animation-name:jump;
+  animation-duration:1s;
+  animation-iteration-count: infinite; 
+  animation-direction: alternate;
+  animation-delay: 0s;
+}
+
+#smallSlide > div:hover > img {
+  transform: scale(1.1);
+}
+
+@keyframes jump {
+  to {object-position: top left;}
+  from {object-position: top right;}
+} 
+
+.shadow-custom {
+  box-shadow: 0px 0px 3px 1px #666;
+}
+
+#new {
+  background:red; 
+  color:white;
+  display: inline-block;
+  border-radius:4px;
+  padding:1px 6px;
+  margin-left:5px;
+  transform: rotate(-2deg);
+}
+
+@media (max-width: 767px) {
+  .md-none {
+    display: none !important;
+  }
+}
