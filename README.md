@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="stacksagar.github.io/disney-plus-ui">Disney Plus UI Design with (React.js & Tailwindcss)</a></h3>
+  <h3 align="center"><a href="https://stacksagar.github.io/disney-plus-ui">Disney Plus UI Design with (React.js & Tailwindcss)</a></h3>
 
 
 <!-- HOW TO RUN -->
